@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Sammar - Data Scientist Portfolio</title>
+
+    <!--
+    - favicon 
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/image_cv.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Mohamed Sammar">Mohamed Sammar</h1>
+
+            <p class="title">Data Scientist</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <a href="mailto:mohamedsammar.b@gmail.com" class="icon-box">
+                <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+              </a>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:mohamedsammar.b@gmail.com" class="contact-link"
+                  >mohamedsammar.b@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Téléphone</p>
+
+                <a href="tel:+33612345678" class="contact-link"
+                  >+33 6 12 34 56 78</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Date d'anniversaire</p>
+
+                <time datetime="2000-02-16">16 Février 2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Ville</p>
+
+                <address>Lille, France</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/mohasa2m"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/mohamed-s-27b3ba23b/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>
+                A propos de moi
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>CV</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="a_propos active" data-page="a_propos">
+          <header>
+            <h2 class="h2 article-title">A propos de moi</h2>
+          </header>
+          <section class="about-text">
+            <p style="text-align: justify">
+              Je suis un étudiant en Data Science basé à Lille. Je me spécialise
+              dans l'analyse des données, le machine learning et le
+              développement d'outils d'intelligence artificielle pour résoudre
+              des problèmes complexes.
+            </p>
+
+            <p style="text-align: justify">
+              Mon objectif est de transformer les données en informations
+              exploitables et de contribuer à des projets qui ont un impact
+              réel, notamment dans les domaines de la santé et de la
+              technologie.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Ce que je fais</h3>
+
+            <ul class="service-list">
+              <!-- Analyse des données -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Analyse des données</h4>
+
+                  <p class="service-item-text">
+                    Exploration, transformation et visualisation des données
+                    pour des décisions éclairées.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Machine Learning -->
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/logo-machine_learning.png"
+                    alt="Machine Learning logo"
+                    width="50"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                  <p class="service-item-text">
+                    Création de modèles prédictifs pour automatiser les
+                    processus et résoudre des problèmes complexes.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Visualisation de données -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="bar-chart-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Visualisation de données
+                  </h4>
+
+                  <p class="service-item-text">
+                    Déploiement de graphiques interactifs et rapports pour
+                    comprendre et communiquer les données efficacement.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Statistique -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="stats-chart-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Statistique</h4>
+
+                  <p class="service-item-text">
+                    Application de méthodes statistiques avancées pour analyser
+                    et interpréter les données.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - Recommandations
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Recommandations</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Dr. Marc Dupont
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      "Votre rigueur dans le traitement des données est
+                      excellente, continuez sur cette voie."
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Prof. Sophie Garnier
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      "Votre capacité à identifier les enjeux clés des systèmes
+                      éducatifs est remarquable."
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Prof. Jeanne Leclerc
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      "Vos graphiques sont clairs et bien construits, cela
+                      facilite la compréhension de vos résultats."
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Henry william"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Dr. Thomas Lemoine
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      "Votre analyse des impacts des données sur les politiques
+                      éducatives est pertinente et bien argumentée."
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2022-06-14">14 juin, 2023</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="languages">
+            <h3 class="h3 languages-title">Langues</h3>
+
+            <ul class="languages-list has-scrollbar">
+              <li class="languages-item">
+                <p class="language-name">Français</p>
+              </li>
+
+              <li class="languages-item">
+                <p class="language-name">Anglais</p>
+              </li>
+
+              <li class="languages-item">
+                <p class="language-name">Espagnol</p>
+              </li>
+
+              <li class="languages-item">
+                <p class="language-name">Catalan</p>
+              </li>
+
+              <li class="languages-item">
+                <p class="language-name">Arabe</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="cv">
+          <header>
+            <h2 class="h2 article-title">CV</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Formations</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Université de Lille</h4>
+
+                <span>2024 — 2025</span>
+
+                <p class="timeline-text">Master en Data Science en santé</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">ETNA- Paris Ivry</h4>
+
+                <span>2022— 2023</span>
+
+                <p class="timeline-text">Bachelor en informatique</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Université de Picardie Jules Verne – Amiens
+                </h4>
+
+                <span>2020 — 2022</span>
+
+                <p class="timeline-text">Licence en science pour la santé</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Stagiaire Développeur Web
+                </h4>
+
+                <span>Mai 2023 — Juillet 2023</span>
+
+                <p class="timeline-text" style="text-align: justify">
+                  Réalisation d'un stage de 2 mois en tant que développeur web.
+                  Participation au développement, à la maintenance de sites web
+                  et à l'implémentation de nouvelles fonctionnalités.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Stagiaire Data Analyst - CHU d'Amiens
+                </h4>
+
+                <span>Avril 2022 — Juin 2022</span>
+
+                <p class="timeline-text" style="text-align: justify">
+                  Développement de modèles d'analyse prédictive pour anticiper
+                  les besoins en ressources hospitalières. Création de rapports
+                  et de tableaux de bord en utilisant Python et des tableaux
+                  pour suivre les principaux indicateurs de performance de
+                  l'hôpital.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Stagiaire Attaché de Recherche Clinique - Clinique Victor
+                  Pauchet, Amiens
+                </h4>
+
+                <span>Juin 2021 — Juillet 2021</span>
+                <p class="timeline-text" style="text-align: justify">
+                  Participation à la gestion et au suivi des essais cliniques.
+                  Collecte et analyse des données cliniques pour assurer la
+                  conformité aux protocoles de recherche. Collaboration avec les
+                  équipes médicales pour garantir la qualité des données et le
+                  respect des délais.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Langage de programmation</h3>
+
+            <div class="skills-container">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-python.png"
+                    alt="Python logo"
+                    width="50"
+                  />
+                </div>
+                <h5 class="skill-name">Python</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-sql.png"
+                    alt="SQL logo"
+                    style="width: 70px; height: auto"
+                  />
+                </div>
+                <h5 class="skill-name">SQL</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-r.png"
+                    alt="R logo"
+                    width="50"
+                  />
+                </div>
+                <h5 class="skill-name">R</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-js.png"
+                    alt="JavaScript logo"
+                    width="50"
+                  />
+                </div>
+                <h5 class="skill-name">JavaScript</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-php.png"
+                    alt="PHP logo"
+                    width="50"
+                  />
+                </div>
+                <h5 class="skill-name">PHP</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-css.png"
+                    alt="CSS logo"
+                    style="width: 100px; height: auto"
+                  />
+                </div>
+                <h5 class="skill-name">CSS</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-html.png"
+                    alt="HTML logo"
+                    style="width: 100px; height: auto"
+                  />
+                </div>
+                <h5 class="skill-name">HTML</h5>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="./assets/images/logo-csharp.png"
+                    alt="C# logo"
+                    style="width: 90px; height: auto"
+                  />
+                </div>
+                <h5 class="skill-name">C#</h5>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Data Science</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>Data Science</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data science"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Analysez des données de systèmes éducatifs
+                  </h3>
+                  <p class="project-category">L'éducation</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data science"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Anticipez les besoins en consommation de bâtiments
+                  </h3>
+                  <p class="project-category">Bâtiments</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data science"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Analyse de données pour un organisme de santé publique
+                  </h3>
+                  <p class="project-category">Santé Publique</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+   
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.447882962389!2d3.057256315738801!3d50.62925097949916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d59b3f3c5e2d%3A0x40af13e816e5c40!2sLille%20Centre%2C%20Lille%2C%20France!5e0!3m2!1sen!2sfr!4v1647608789441!5m2!1sen!2sfr"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Formulaire de contact</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Nom et Prénom"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Adresse Email"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Votre Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Envoyer un message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
